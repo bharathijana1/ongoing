@@ -1,0 +1,54 @@
+create a folder named - backend
+
+cd backend
+npm init
+npm i nodemon
+nodemon app.js (or) nodemon .\app.js 
+
+
+if nodemon app.js is not working
+-------------------------------------error -------------------------------
+
+PS C:\Users\WorkStation2\Documents\BHARATHI\Mern-stack\Stepper\backend> nodemon .\app.js
+https:/go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ nodemon .\app.js
++ ~~~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+
+---------------------------------------------------------------------------- do the below 
+
+go to file -> local disk(c) -> users -> workstation2(chose your folder) ->app data -> roaming -> npm ->  delete a file(nodemon)
+
+----
+
+go to package/json --- add this line inside the script-- "start": "nodemon app.js",
+
+after adding this is how the page is display
+
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
+
+
+finally - npm start
+
+------------installing express -------
+npm i express
+
+------------installing dotenv -------
+npm i dotenv
+

@@ -1,0 +1,11 @@
+.stepper-custom .MuiStepIcon-root {
+  color: blue; /* Color for inactive steps */
+}
+
+.stepper-custom .MuiStepIcon-active {
+  color: darkblue; /* Color for active step */
+}
+
+.stepper-custom .MuiStepIcon-completed {
+  color: blue; /* Color for completed steps */
+}
